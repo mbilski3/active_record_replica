@@ -115,6 +115,14 @@ module ActiveRecordReplica
     @ignore_transactions = ignore_transactions
   end
 
+  def self.replica_models=(models)
+    @replica_models = models
+  end
+
+  def self.replica_models
+    @replica_models
+  end
+
   private
 
   def self.thread_variable_equals(key, value)
