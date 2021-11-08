@@ -120,7 +120,7 @@ module ActiveRecordReplica
   end
 
   def self.replica_models
-    @replica_models
+    @replica_models || []
   end
 
   private
